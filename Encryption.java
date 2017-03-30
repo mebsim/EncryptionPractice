@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// A quick and messy method of dealing with a ceasar encryption.
+
 public class Encryption {
 
 	static String[] letters = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
