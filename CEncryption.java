@@ -17,11 +17,7 @@ public class CEncryption {
 		for(int i = 0; i < original.length(); i++) {
 			for(int j = 0; j < letters.length; j++) {
 				if(original.charAt(i) == letters[j].toCharArray()[0]) {
-					if(j+rotations > 25) {
-						originalChange[i] = letters[j + rotations - 26].toCharArray()[0];
-					} else {
-						originalChange[i] = letters[j + rotations].toCharArray()[0];
-					}
+					originalChange[i] = letters[(j + rotations) % 26].toCharArray()[0];
 				}
 			}
 		}
